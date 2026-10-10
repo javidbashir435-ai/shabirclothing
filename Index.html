@@ -1,0 +1,233 @@
+<!doctype html><html lang="en"><head><script>
+window.addEventListener('error',function(e){var m=document.getElementById('main'),t='Error: '+e.message+(e.lineno?' (line '+e.lineno+')':'');if(m)m.innerHTML='<div class="card" style="border-left:4px solid #c0392b"><h2>Something went wrong</h2><p>'+t.replace(/</g,'&lt;')+'</p><p>If this mentions "Unexpected" or "Invalid", the keys line near the top of the file was edited incorrectly. Both values must stay inside single quotes.</p></div>';else document.title=t});
+</script>
+<script>
+/* ===== EDIT ONLY THE TWO VALUES BETWEEN THE QUOTES ===== */
+var SUPABASE_URL='https://lwdhvvelurenjpkvxizy.supabase.co/rest/v1/';
+var SUPABASE_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imx3ZGh2dmVsdXJlbmpwa3Z4aXp5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTE1MjUzMjEsImV4cCI6MjEwNzEwMTMyMX0.aVITwdYSV4GQ5M6OtJUD2ElqAWBn6IGLG6Tt_MfMVBc';
+/* ======================================================= */
+</script>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>SHABIR CLOTHING HOUSE – ERP</title>
+<style>
+:root{--bg:#f3f5f9;--cd:#fff;--tx:#1b2330;--mu:#6b7686;--pr:#1f4e79;--ac:#c8963e;--bd:#e1e6ee;--ok:#1b8a5a;--er:#c0392b;--hd:#eef2f8;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#10151d;--cd:#18202b;--tx:#e6ebf2;--mu:#93a0b3;--pr:#6aa6dd;--bd:#2a3442;--hd:#202a38}}
+:root[data-theme=dark]{--bg:#10151d;--cd:#18202b;--tx:#e6ebf2;--mu:#93a0b3;--pr:#6aa6dd;--bd:#2a3442;--hd:#202a38}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:14px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.app{display:grid;grid-template-columns:230px 1fr;min-height:100vh}
+aside{background:#17324d;color:#dbe6f2;padding:14px 0;position:sticky;top:0;height:100vh;overflow:auto}
+.brand{padding:4px 18px 14px;border-bottom:1px solid #ffffff22;margin-bottom:8px}.brand b{display:block;font-size:15px;letter-spacing:.5px;color:#fff}.brand span{font-size:11px;color:#c8963e}
+aside h6{margin:12px 18px 4px;font-size:10px;letter-spacing:1px;color:#8fa6bf;text-transform:uppercase}
+aside a{display:block;padding:8px 18px;cursor:pointer;color:#dbe6f2;border-left:3px solid transparent}aside a:hover{background:#ffffff12}aside a.on{background:#ffffff1c;border-color:#c8963e;color:#fff}
+main{padding:18px 22px;min-width:0}h2{margin:0 0 14px;font-size:20px}
+.card{background:var(--cd);border:1px solid var(--bd);border-radius:10px;padding:14px;margin-bottom:14px}
+.kp{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-bottom:14px}.kp div{background:var(--cd);border:1px solid var(--bd);border-radius:10px;padding:12px;border-top:3px solid var(--ac)}.kp small{color:var(--mu);display:block}.kp b{font-size:19px}
+.fb{display:flex;flex-wrap:wrap;gap:10px;align-items:end}.fb label,.fm label{display:flex;flex-direction:column;font-size:11px;color:var(--mu);gap:3px}
+input,select,textarea{font:inherit;padding:7px 9px;border:1px solid var(--bd);border-radius:7px;background:var(--cd);color:var(--tx);min-width:0}
+button{font:inherit;padding:7px 14px;border:0;border-radius:7px;background:var(--pr);color:#fff;cursor:pointer}button.g{background:var(--hd);color:var(--tx);border:1px solid var(--bd)}button.d{background:var(--er);padding:3px 9px}
+.fm{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:10px}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%}th,td{padding:7px 9px;border-bottom:1px solid var(--bd);text-align:left;white-space:nowrap}th{background:var(--hd);font-size:12px;position:sticky;top:0}
+.r{text-align:right}tfoot td{font-weight:700;background:var(--hd)}.dr{color:var(--ok)}.cr{color:var(--er)}.mu{color:var(--mu)}
+.ph{display:none;text-align:center;margin-bottom:8px}.tag{padding:2px 7px;border-radius:9px;background:var(--hd);font-size:11px}
+#toast{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));background:#17324d;color:#fff;padding:10px 16px;border-radius:8px;display:none}
+@media(max-width:800px){.app{grid-template-columns:1fr}aside{position:static;height:auto;display:flex;overflow-x:auto;padding:0}aside h6,.brand span{display:none}.brand{border:0;padding:10px 14px;white-space:nowrap}aside a{white-space:nowrap;border-left:0;border-bottom:3px solid transparent}aside a.on{border-color:#c8963e}main{padding:12px}}
+@media print{aside,.fb,button,#toast{display:none!important}.app{display:block}.ph{display:block}main{padding:0}.card{border:0}body{background:#fff;color:#000}}
+
+aside{background:linear-gradient(180deg,#16314d,#0c1c2c);box-shadow:2px 0 12px #0003}
+.brand:before{content:"SC";display:grid;place-items:center;width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,#c8963e,#ecc77a);color:#17324d;font-weight:800;margin-bottom:8px}
+h2{font-size:22px;letter-spacing:-.3px}.card{box-shadow:0 1px 3px #0000000d,0 8px 20px #0000000a;border-radius:14px}
+th{text-transform:uppercase;letter-spacing:.4px;font-size:11px;color:var(--mu)}tbody tr:hover{background:var(--hd)}
+button{box-shadow:0 1px 2px #0003;transition:.15s}button:hover{filter:brightness(1.12)}button.g{box-shadow:none}
+.hero{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:14px}.hero h2{margin:0}
+.kp div{border:0;border-radius:14px;color:#fff;position:relative;overflow:hidden;box-shadow:0 8px 18px #0002;background:linear-gradient(135deg,var(--g))}.kp small{color:#ffffffcc}.kp b{color:#fff!important}
+.kp div::after{position:absolute;right:10px;top:6px;font-size:30px;opacity:.35}
+.kp div:nth-child(1){--g:#1f4e79,#3b82c4}.kp div:nth-child(2){--g:#14705a,#2cb58a}.kp div:nth-child(3){--g:#7a4a14,#c8963e}.kp div:nth-child(4){--g:#1b6b3a,#4cae6b}.kp div:nth-child(5){--g:#8f2d2d,#d9625a}.kp div:nth-child(6){--g:#4b3a8a,#8a74d6}.kp div:nth-child(7){--g:#5a5a66,#8e8e9c}
+.kp div:nth-child(1)::after{content:"🛍"}.kp div:nth-child(2)::after{content:"📈"}.kp div:nth-child(3)::after{content:"📦"}.kp div:nth-child(4)::after{content:"💰"}.kp div:nth-child(5)::after{content:"🧾"}.kp div:nth-child(6)::after{content:"👔"}.kp div:nth-child(7)::after{content:"⚠️"}
+.top{display:none}#doc{display:none;position:fixed;inset:0;background:#000a;z-index:50;overflow:auto;padding:14px}.dbar{max-width:820px;margin:0 auto 10px;display:flex;gap:8px;flex-wrap:wrap}
+.sheet{max-width:820px;margin:0 auto;background:#fff;color:#1b2330;border-radius:6px;overflow:hidden;box-shadow:0 10px 40px #0006}
+.ih{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:20px 26px;background:linear-gradient(120deg,#17324d,#24577f);color:#fff;border-bottom:5px solid #c8963e}.lg{display:flex;gap:12px;align-items:center}
+.mono{width:46px;height:46px;border-radius:12px;background:linear-gradient(135deg,#c8963e,#ecc77a);color:#17324d;font-weight:800;font-size:22px;display:grid;place-items:center}.ih h1{margin:0;font-size:20px;letter-spacing:.8px}.ih small{color:#e8c071}
+.bd{padding:6px 14px;border:1.5px solid #e8c071;color:#e8c071;border-radius:20px;font-weight:700;letter-spacing:1px;font-size:12px;text-transform:uppercase}
+.ia{padding:8px 26px;background:#f6f1e7;font-size:12px;color:#5a4a2a;display:flex;flex-wrap:wrap;gap:4px 18px}
+.ig,.ib{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:16px 26px}.ig h5{margin:0 0 4px;font-size:10px;letter-spacing:1px;color:#c8963e;text-transform:uppercase}.ig div{font-size:13px}
+.sheet th{background:#17324d;color:#fff;position:static}.sheet td{border-color:#edeff3;white-space:normal;color:#1b2330}.sheet tbody tr:nth-child(even){background:#f8f9fc}
+.tt td{border:0;padding:4px 8px}.tt .gt td{background:#17324d;color:#fff;font-weight:700;font-size:15px}
+.bk{border:1px dashed #c8963e;border-radius:10px;padding:10px;display:flex;gap:12px;align-items:center;font-size:12px;color:#1b2330}.bk img{width:96px;height:96px;object-fit:contain;border:1px solid #e1e6ee;border-radius:6px;background:#fff}
+.iw{padding:4px 26px;font-size:12px;color:#444}.itm{padding:8px 26px;font-size:11px;color:#666;white-space:pre-wrap}
+.sg{display:flex;justify-content:space-between;align-items:end;padding:22px 26px 16px;font-size:12px;color:#333}.sg div:last-child{text-align:center;border-top:1px solid #999;padding-top:4px;min-width:170px}
+.ft{background:#17324d;color:#e8c071;text-align:center;padding:8px;font-size:12px;letter-spacing:.5px}
+@media(max-width:800px){.top{display:flex;position:sticky;top:0;z-index:20;align-items:center;gap:10px;padding:10px 12px;background:#17324d;color:#fff}
+aside{position:fixed;left:0;top:0;bottom:0;width:260px;height:100vh;display:block;transform:translateX(-105%);transition:.25s;z-index:40;padding:14px 0}body.nv aside{transform:none}body.nv main{opacity:.35}
+aside h6{display:block}.brand span{display:inline}aside a{border-left:3px solid transparent;border-bottom:0}aside a.on{border-color:#c8963e}
+.app{display:block}main{padding:12px}.card{padding:10px;border-radius:12px}.fm{grid-template-columns:1fr 1fr}.kp{grid-template-columns:1fr 1fr}.kp b{font-size:16px}
+.ih{flex-direction:column;align-items:flex-start}.ig,.ib{grid-template-columns:1fr;padding:12px 16px}.ia,.iw,.itm,.sg,.ih{padding-left:16px;padding-right:16px}#doc{padding:8px}input,select,textarea{font-size:16px}}
+@media print{.top{display:none!important}body.pd .app,body.pd .dbar{display:none!important}#doc{position:static;background:none;padding:0}.sheet{box-shadow:none;max-width:none;border-radius:0}.ih,.tt .gt td,.sheet th,.ft,.mono{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+</style><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script></head><body><div class="top"><button class="g" onclick="document.body.classList.toggle('nv')">☰</button><b id="tt"></b></div><div class="app"><aside id="nav"></aside><main id="main"><div class="card"><b>Loading… (version 3)</b><p class="mu">If this message stays for more than a few seconds, JavaScript is not running. Either you are opening an old copy of the file, or a viewer that blocks scripts (WhatsApp, Drive or email preview). Open the file in Google Chrome instead.</p></div></main></div><div id="doc"></div><div id="toast"></div>
+<script>
+const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt=n=>(+n||0).toLocaleString('en-IN',{minimumFractionDigits:2,maximumFractionDigits:2}),uid=()=>Math.random().toString(36).slice(2,9);
+const today=()=>new Date().toISOString().slice(0,10),yy=new Date().getFullYear(),fy=(new Date().getMonth()>=3?yy:yy-1)+'-04-01';
+// type: [name, party Dr(+)/Cr(-), stock effect, prefix]
+const VT={SAL:['Sales Invoice',1,-1,'S'],PUR:['Purchase Invoice',-1,1,'P'],SRT:['Sales Return',-1,1,'SR'],PRT:['Purchase Return',1,-1,'PR'],RCT:['Receipt',-1,0,'RC'],PAY:['Payment',1,0,'PY']};
+function seed(){return{parties:[],items:[],vch:[],seq:{}}}
+let S=seed();
+const SB={c:null,snap:{}},KEY={parties:'parties',items:'items',vouchers:'vch'};let SY='',busy=false,again=false;
+const TB={parties:p=>({id:p.id,name:p.name,type:p.type,data:p}),items:i=>({id:i.id,name:i.name,data:i}),vouchers:v=>({id:v.id,no:v.no,type:v.type,vdate:v.date,party_id:v.party||null,amount:v.amount,data:v})};
+function setSync(t){SY=t;const e=$('#sy');if(e)e.textContent=t}
+async function sync(){if(!SB.c)return;if(busy){again=true;return}busy=true;setSync('⏳ Saving…');
+ try{for(const t in TB){const cur=S[KEY[t]],ids=new Set(cur.map(x=>x.id)),ch=cur.filter(x=>SB.snap[t+x.id]!==JSON.stringify(x));
+  for(let i=0;i<ch.length;i+=400){const {error}=await SB.c.from(t).upsert(ch.slice(i,i+400).map(TB[t]));if(error)throw error}ch.forEach(x=>SB.snap[t+x.id]=JSON.stringify(x));
+  const del=Object.keys(SB.snap).filter(k=>k.startsWith(t)&&!ids.has(k.slice(t.length)));
+  if(del.length){const {error}=await SB.c.from(t).delete().in('id',del.map(k=>k.slice(t.length)));if(error)throw error;del.forEach(k=>delete SB.snap[k])}}
+  const sj=JSON.stringify([S.biz,S.seq]);if(SB.snap.set!==sj){const {error}=await SB.c.from('settings').update({biz:S.biz||{},seq:S.seq||{}}).eq('id',1);if(error)throw error;SB.snap.set=sj}
+  setSync('☁ Saved')}catch(e){setSync('⚠ Not saved');toast('Cloud save failed: '+(e.message||e))}
+ busy=false;if(again){again=false;sync()}}
+const save=()=>{sync()};
+async function loadAll(){const g=async t=>{let o=[],f=0;for(;;){const {data,error}=await SB.c.from(t).select('data').range(f,f+999);if(error)throw error;o.push(...data.map(r=>r.data));if(data.length<1000)return o;f+=1000}};
+ S={parties:await g('parties'),items:await g('items'),vch:await g('vouchers'),seq:{},biz:{}};
+ const {data}=await SB.c.from('settings').select('*').eq('id',1).single();if(data){S.seq=data.seq||{};S.biz=data.biz||{}}
+ SB.snap={};for(const t in KEY)S[KEY[t]].forEach(x=>SB.snap[t+x.id]=JSON.stringify(x));SB.snap.set=JSON.stringify([S.biz,S.seq])}
+function loginUI(){$('#nav').innerHTML='';$('#tt').textContent='Sign in';$('#main').innerHTML=`<div class="card" style="max-width:380px;margin:50px auto"><div class="mono" style="margin-bottom:10px">S</div><h2>SHABIR CLOTHING HOUSE</h2><p class="mu">Sign in to your ERP</p><div class="fm" style="grid-template-columns:1fr"><label>Email<input id="le" type="email"></label><label>Password<input id="lp" type="password" onkeydown="if(event.key=='Enter')login()"></label></div><button onclick="login()">Sign in</button></div>`}
+async function login(){const {error}=await SB.c.auth.signInWithPassword({email:$('#le').value.trim(),password:$('#lp').value});if(error)return toast(error.message);start()}
+async function logout(){await SB.c.auth.signOut();S=seed();loginUI()}
+async function start(){$('#main').innerHTML='<div class="card">Loading your data…</div>';try{await loadAll();draw()}catch(e){$('#main').innerHTML='<div class="card">Could not load data: '+esc(e.message||e)+'<br>Make sure supabase_schema.sql was run in your project.</div>'}}
+function showErr(m){const e=$('#main');if(e)e.innerHTML='<div class="card" style="border-left:4px solid #c0392b"><h2>Something went wrong</h2><p>'+esc(m)+'</p><p class="mu">Check the two key lines near the top of the file (lines 5-7), and that supabase_schema.sql was run. Send this message to your developer.</p></div>'}
+window.addEventListener('error',e=>showErr(e.message));window.addEventListener('unhandledrejection',e=>showErr((e.reason&&e.reason.message)||e.reason));
+async function boot(){try{await boot2()}catch(e){showErr(e.message||e)}}
+async function boot2(){if(!window.supabase)return showErr('The Supabase library did not load. Check your internet connection or ad-blocker, then refresh.');if(SUPABASE_URL.startsWith('PASTE')){$('#main').innerHTML='<div class="card"><h2>Setup needed</h2>Open this file and put your Supabase Project URL and anon public key at the top of the file (search SUPABASE_URL).</div>';return}
+ const U=SUPABASE_URL.trim().replace(/\/+$/,'').replace(/\/rest\/v1$/,'');if(!/^https:\/\/[a-z0-9-]+\.supabase\.co$/.test(U))return showErr('Project URL looks wrong: '+U+' . It must look like https://abcdxyz.supabase.co');
+ SB.c=supabase.createClient(U,SUPABASE_KEY.trim());const {data}=await Promise.race([SB.c.auth.getSession(),new Promise((_,r)=>setTimeout(()=>r(new Error('Could not reach Supabase. Check internet, and that the Project URL and key are correct.')),10000))]);data.session?start():loginUI()}
+
+const BD={name:'SHABIR CLOTHING HOUSE',tag:'Quality Garments for Everyone',addr:'',phone:'',email:'',gstin:'',bank:'',acname:'',acno:'',ifsc:'',upi:'',terms:'Goods once sold will not be taken back or exchanged.\nSubject to local jurisdiction.',qr:''};
+const B=()=>Object.assign({},BD,S.biz||{});let EV=null;
+const act=v=>`<button class="g" onclick="viewV('${v.id}')">🖨</button> <button class="g" onclick="editV('${v.id}')">✎</button> <button class="d" onclick="delV('${v.id}')">✕</button>`;
+function words(n){n=Math.round(n);if(!n)return'Zero Rupees Only';const a='One Two Three Four Five Six Seven Eight Nine Ten Eleven Twelve Thirteen Fourteen Fifteen Sixteen Seventeen Eighteen Nineteen'.split(' '),b='Twenty Thirty Forty Fifty Sixty Seventy Eighty Ninety'.split(' '),t=x=>x<20?(a[x-1]||''):b[(x/10|0)-2]+(x%10?' '+a[x%10-1]:''),h=x=>(x>99?a[(x/100|0)-1]+' Hundred '+t(x%100):t(x)).trim();let r='';[[1e7,'Crore'],[1e5,'Lakh'],[1e3,'Thousand'],[1,'']].forEach(([d,w])=>{const q=Math.floor(n/d);n%=d;if(q)r+=h(q)+' '+w+' '});return r.trim()+' Rupees Only'}
+function showDoc(h,id){document.body.classList.add('pd');const d=$('#doc');d.innerHTML=`<div class="dbar"><button onclick="print()">🖨 Print</button>${id?` <button class="g" onclick="closeDoc();editV('${id}')" style="background:#fff">✎ Edit</button> <button class="d" style="padding:7px 14px" onclick="closeDoc();delV('${id}')">Delete</button>`:''} <button class="g" onclick="closeDoc()" style="background:#fff">Close</button></div><div class="sheet">${h}</div>`;d.style.display='block';d.scrollTop=0}
+function closeDoc(){document.body.classList.remove('pd');$('#doc').style.display='none'}
+function viewV(id){showDoc(invHTML(S.vch.find(v=>v.id==id)),id)}
+function invHTML(v){const b=B(),p=(v.party&&P(v.party))||{},inv=!!v.lines,sale=['SAL','SRT','RCT'].includes(v.type);
+const ttl={SAL:'Tax Invoice',PUR:'Purchase Invoice',SRT:'Credit Note · Sales Return',PRT:'Debit Note · Purchase Return',RCT:'Receipt Voucher',PAY:'Payment Voucher'}[v.type],who={SAL:'Billed To',SRT:'Customer',RCT:'Received From',PUR:'Supplier',PRT:'Supplier',PAY:'Paid To'}[v.type];
+const gr=inv?v.lines.reduce((a,l)=>a+l.q*l.rate,0):v.amount,bal=v.party&&P(v.party)?ledger(v.party,'0000',v.date).close:null;
+const tb=inv?`<div class="tw"><table><thead><tr><th>#</th><th>Item Description</th><th>Size</th><th class="r">Qty</th><th class="r">Rate</th><th class="r">Amount</th></tr></thead><tbody>${v.lines.map((l,i)=>{const it=I(l.item)||{};return`<tr><td>${i+1}</td><td><b>${esc(it.name)}</b><br><small>${esc(it.cat||'')}</small></td><td>${esc(it.size||'')}</td><td class="r">${l.q}</td><td class="r">${fmt(l.rate)}</td><td class="r">${fmt(l.q*l.rate)}</td></tr>`}).join('')}</tbody></table></div>`
+:`<div class="tw"><table><thead><tr><th>Particulars</th><th>Mode</th><th class="r">Amount</th></tr></thead><tbody><tr><td>${esc(v.narr||ttl)}</td><td>${esc(v.mode||'')}</td><td class="r">${fmt(v.amount)}</td></tr></tbody></table></div>`;
+const bank=sale&&(b.bank||b.acno||b.upi||b.qr)?`<div class="bk">${b.qr?`<img src="${b.qr}">`:''}<div><b>Bank / Payment Details</b><br>${b.bank?'Bank: '+esc(b.bank)+'<br>':''}${b.acname?'A/C Name: '+esc(b.acname)+'<br>':''}${b.acno?'A/C No: '+esc(b.acno)+'<br>':''}${b.ifsc?'IFSC: '+esc(b.ifsc)+'<br>':''}${b.upi?'UPI: '+esc(b.upi)+'<br>':''}${b.qr?'<i>Scan QR to pay</i>':''}</div></div>`:'<div></div>';
+return`<div class="ih"><div class="lg"><div class="mono">${esc(b.name[0]||'S')}</div><div><h1>${esc(b.name)}</h1><small>${esc(b.tag)}</small></div></div><div class="bd">${ttl}</div></div>
+<div class="ia">${b.addr?`<span>📍 ${esc(b.addr)}</span>`:''}${b.phone?`<span>📞 ${esc(b.phone)}</span>`:''}${b.email?`<span>✉ ${esc(b.email)}</span>`:''}${b.gstin?`<span><b>GSTIN:</b> ${esc(b.gstin)}</span>`:''}</div>
+<div class="ig"><div><h5>${who}</h5><b>${esc(p.name||'Cash')}</b><br>${esc(p.city||'')} ${esc(p.phone||'')}<br>${p.gstin?'GSTIN: '+esc(p.gstin):''}</div><div style="text-align:right"><h5>Document Details</h5>No: <b>${v.no}</b><br>Date: <b>${v.date.split('-').reverse().join('/')}</b></div></div>${tb}
+<div class="ib">${bank}<table class="tt"><tr><td>Sub Total</td><td class="r">${fmt(gr)}</td></tr>${v.disc?`<tr><td>Discount</td><td class="r">- ${fmt(v.disc)}</td></tr>`:''}<tr class="gt"><td>${inv?'Net Total':'Amount'}</td><td class="r">₹ ${fmt(v.amount)}</td></tr>${bal!=null?`<tr><td class="mu">Account balance</td><td class="r">${bs(bal)}</td></tr>`:''}</table></div>
+<div class="iw"><b>Amount in words:</b> ${words(v.amount)}</div>${inv&&v.narr?`<div class="iw">Note: ${esc(v.narr)}</div>`:''}${sale&&b.terms?`<div class="itm"><b>Terms &amp; Conditions</b>\n${esc(b.terms)}</div>`:''}
+<div class="sg"><div>Customer Signature</div><div>For <b>${esc(b.name)}</b><br>Authorised Signatory</div></div><div class="ft">★ Thank you for your business ★</div>`}
+function itemCard(id){const i=I(id),s=stock(id),mv=sorted().filter(v=>(v.lines||[]).some(l=>l.item==id)).map(v=>{const l=v.lines.find(l=>l.item==id);return[v.date,v.no,VT[v.type][0],esc(pn(v.party)),l.q,fmt(l.rate)]});
+showDoc(`<div class="ih"><div class="lg"><div class="mono">${esc(B().name[0])}</div><div><h1>${esc(B().name)}</h1><small>Item Stock Card</small></div></div></div><div class="ig"><div><h5>Item</h5><b>${esc(i.name)}</b><br>${esc(i.cat)} · ${esc(i.size)}<br>Cost ${fmt(i.cost)} · Price ${fmt(i.price)}</div><div style="text-align:right"><h5>Stock</h5>Opening ${s.o} · In ${s.inn} · Out ${s.out}<br><b>Balance ${s.q} pcs</b> · Value ₹${fmt(s.q*i.cost)}</div></div>`+tbl(['Date','No','Type','Party','>Qty','>Rate'],mv)+`<div class="ft">${esc(B().name)}</div>`)}
+function editV(id){const v=S.vch.find(x=>x.id==id);EV=id;VTYPE=v.type;L=(v.lines||[]).map(l=>({...l}));view='new';EDIT=null;document.body.classList.remove('nv');draw();scrollTo(0,0)}
+function collectBiz(){const b=B();['name','tag','addr','phone','email','gstin','bank','acname','acno','ifsc','upi','terms'].forEach(k=>{const e=$('#b_'+k);if(e)b[k]=e.value});S.biz=b}
+function saveBiz(){collectBiz();save();toast('Business details saved');draw()}
+function upQR(el){const f=el.files[0];if(!f)return;collectBiz();const r=new FileReader();r.onload=()=>{const im=new Image();im.onload=()=>{const k=Math.min(1,500/Math.max(im.width,im.height)),c=document.createElement('canvas');c.width=im.width*k;c.height=im.height*k;c.getContext('2d').drawImage(im,0,0,c.width,c.height);S.biz.qr=c.toDataURL('image/png');save();toast('QR uploaded');draw()};im.src=r.result};r.readAsDataURL(f)}
+function dlBackup(){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(S)],{type:'application/json'}));a.download='shabir-clothing-backup-'+today()+'.json';a.click()}
+function restoreFile(el){const f=el.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const d=JSON.parse(r.result);if(!d.parties||!d.vch)throw 0;if(!confirm('Replace current data with this backup?'))return;S=d;save();toast('Backup restored');go('dash')}catch(e){toast('Invalid backup file')}};r.readAsText(f)}
+
+function toast(m){const t=$('#toast');t.textContent=m;t.style.display='block';setTimeout(()=>t.style.display='none',2200)}
+const P=id=>S.parties.find(p=>p.id==id),I=id=>S.items.find(i=>i.id==id),pn=id=>id?(P(id)||{name:'?'}).name:'Cash';
+let view='dash',FL={from:fy,to:today(),party:'',type:'',q:'',st:'',cat:'',low:''},L=[],VTYPE='SAL',EDIT=null;
+const sorted=()=>[...S.vch].sort((a,b)=>a.date.localeCompare(b.date)||a.ts-b.ts);
+function ledger(pid,from,to){const p=P(pid);let open=(p.drcr=='Cr'?-1:1)*(+p.opening||0),rows=[];
+ sorted().filter(v=>v.party==pid).forEach(v=>{const s=VT[v.type][1],dr=s>0?v.amount:0,cr=s<0?v.amount:0;if(v.date<from)open+=dr-cr;else if(v.date<=to)rows.push({v,dr,cr})});
+ let b=open;rows.forEach(r=>{b+=r.dr-r.cr;r.bal=b});return{open,rows,close:b}}
+const bs=b=>fmt(Math.abs(b))+(b>=0?' Dr':' Cr');
+function stock(id){const i=I(id);let o=+i.opening||0,inn=0,out=0;S.vch.forEach(v=>(v.lines||[]).forEach(l=>{if(l.item==id){const e=VT[v.type][2];if(e>0)inn+=+l.q;else out+=+l.q}}));return{o,inn,out,q:o+inn-out}}
+function tbl(h,rows,foot){return`<div class="tw"><table><thead><tr>${h.map(x=>`<th class="${x[0]=='>'?'r':''}">${esc(x.replace(/^>/,''))}</th>`).join('')}</tr></thead><tbody>${rows.length?rows.map(r=>`<tr>${r.map((c,i)=>`<td class="${h[i][0]=='>'?'r':''}">${c}</td>`).join('')}</tr>`).join(''):`<tr><td colspan="${h.length}" class="mu">No records found</td></tr>`}</tbody>${foot?`<tfoot><tr>${foot.map((c,i)=>`<td class="${h[i][0]=='>'?'r':''}">${c}</td>`).join('')}</tr></tfoot>`:''}</table></div>`}
+const popt=(sel,all,filt)=>(all?`<option value="">${all}</option>`:'')+S.parties.filter(filt||(()=>1)).map(p=>`<option value="${p.id}" ${p.id==sel?'selected':''}>${esc(p.name)}</option>`).join('');
+// ---------- reports ----------
+const match=(v,q)=>!q||(v.no+' '+pn(v.party)+' '+(v.narr||'')).toLowerCase().includes(q.toLowerCase());
+function reg(types){return f=>{const vs=sorted().filter(v=>types.includes(v.type)&&v.date>=f.from&&v.date<=f.to&&(!f.party||v.party==f.party)&&match(v,f.q));let g=0,d=0,n=0,q=0;
+ const rows=vs.map(v=>{const sg=v.type=='SAL'||v.type=='PUR'?1:-1,qt=v.lines.reduce((a,l)=>a+ +l.q,0),gr=v.lines.reduce((a,l)=>a+l.q*l.rate,0);g+=sg*gr;d+=sg*(v.disc||0);n+=sg*v.amount;q+=sg*qt;return[v.date,v.no,VT[v.type][0],esc(pn(v.party)),qt,fmt(gr),fmt(v.disc||0),fmt(v.amount),act(v)]});
+ return tbl(['Date','Vch No','Type','Party','>Qty','>Gross','>Discount','>Net Amount',''],rows,['','','','Net total (returns deducted)',q,fmt(g),fmt(d),fmt(n),''])}}
+const R={
+ r_day:{t:'Day Book',f:['from','to','type','party','q'],run:f=>{const vs=sorted().filter(v=>v.date>=f.from&&v.date<=f.to&&(!f.type||v.type==f.type)&&(!f.party||v.party==f.party)&&match(v,f.q));let dr=0,cr=0;
+  return tbl(['Date','Vch No','Type','Party','Narration','>Debit','>Credit',''],vs.map(v=>{const s=VT[v.type][1];s>0?dr+=v.amount:cr+=v.amount;return[v.date,v.no,VT[v.type][0],esc(pn(v.party)),esc(v.narr||''),s>0?fmt(v.amount):'',s<0?fmt(v.amount):'',act(v)]}),['','','','','Total',fmt(dr),fmt(cr),''])}},
+ r_sal:{t:'Sales Account / Register',f:['from','to','party','q'],run:reg(['SAL','SRT'])},
+ r_pur:{t:'Purchase Account / Register',f:['from','to','party','q'],run:reg(['PUR','PRT'])},
+ r_led:{t:'Ledger Statement (Party Account)',f:['from','to','party1'],run:f=>{if(!f.party)return'<p class="mu">Select a party to view the ledger statement.</p>';const p=P(f.party),l=ledger(f.party,f.from,f.to);let dr=0,cr=0;
+  const rows=[['','','','Opening Balance','','',bs(l.open),''],...l.rows.map(r=>{dr+=r.dr;cr+=r.cr;return[r.v.date,r.v.no,VT[r.v.type][0],esc(r.v.narr||(r.v.lines?r.v.lines.length+' item(s)':r.v.mode||'')),r.dr?fmt(r.dr):'',r.cr?fmt(r.cr):'',bs(r.bal),act(r.v)]})];
+  return`<div class="ph"><b>Account Statement – ${esc(p.name)}</b><br>${f.from} to ${f.to}</div><p><b>${esc(p.name)}</b> <span class="tag">${p.type}</span> ${esc(p.city)} ${esc(p.phone)} ${p.gstin?'GSTIN: '+esc(p.gstin):''}</p>`+tbl(['Date','Vch No','Type','Particulars','>Debit','>Credit','>Balance',''],rows,['','','','Closing Balance',fmt(dr),fmt(cr),bs(l.close),''])}},
+ r_out:{t:'Party Outstanding / Balances',f:['to','st','q'],run:f=>{let d=0,c=0;const rows=S.parties.filter(p=>(p.name+p.city).toLowerCase().includes(f.q.toLowerCase())).map(p=>({p,b:ledger(p.id,'0000',f.to).close})).filter(x=>f.st=='Dr'?x.b>0:f.st=='Cr'?x.b<0:Math.abs(x.b)>.001).map(x=>{x.b>0?d+=x.b:c-=x.b;return[esc(x.p.name),x.p.type,esc(x.p.phone),esc(x.p.city),x.b>0?fmt(x.b):'',x.b<0?fmt(-x.b):'',`<button class="g" onclick="FL.party='${x.p.id}';go('r_led')">Ledger</button>`]});
+  return tbl(['Party','Type','Phone','City','>To Receive (Dr)','>To Pay (Cr)',''],rows,['Total','','','',fmt(d),fmt(c),''])}},
+ r_stk:{t:'Stock Report',f:['cat','q','low'],run:f=>{let tv=0,tq=0;const rows=S.items.filter(i=>(!f.cat||i.cat==f.cat)&&(i.name+i.size).toLowerCase().includes(f.q.toLowerCase())).map(i=>({i,s:stock(i.id)})).filter(x=>!f.low||x.s.q<=x.i.min).map(({i,s})=>{tv+=s.q*i.cost;tq+=s.q;return[esc(i.name),esc(i.cat),esc(i.size),s.o,s.inn,s.out,`<b class="${s.q<=i.min?'cr':''}">${s.q}</b>`,fmt(i.cost),fmt(s.q*i.cost)]});
+  return tbl(['Item','Category','Size','>Opening','>In','>Out','>Stock','>Cost','>Value'],rows,['Total','','','','','',tq,'',fmt(tv)])}},
+ r_pl:{t:'Profit & Loss / Account Summary',f:['from','to'],run:f=>{const sum=t=>S.vch.filter(v=>v.type==t&&v.date>=f.from&&v.date<=f.to).reduce((a,v)=>a+v.amount,0);const sa=sum('SAL')-sum('SRT'),pu=sum('PUR')-sum('PRT'),os=S.items.reduce((a,i)=>a+i.opening*i.cost,0),cs=S.items.reduce((a,i)=>a+stock(i.id).q*i.cost,0),gp=sa+cs-os-pu;
+  const rc=sum('RCT'),py=sum('PAY');return tbl(['Particulars','>Amount'],[['Net Sales (Sales − Returns)',fmt(sa)],['Net Purchases (Purchase − Returns)',fmt(pu)],['Opening Stock (at cost)',fmt(os)],['Closing Stock (at cost)',fmt(cs)],['<b>Gross Profit</b>',`<b class="${gp>=0?'dr':'cr'}">${fmt(gp)}</b>`],['Total Receipts from parties',fmt(rc)],['Total Payments to parties',fmt(py)],['Total Receivable (all parties)',fmt(S.parties.reduce((a,p)=>a+Math.max(0,ledger(p.id,'0000','9999').close),0))],['Total Payable (all parties)',fmt(-S.parties.reduce((a,p)=>a+Math.min(0,ledger(p.id,'0000','9999').close),0))]])}}};
+const FD={from:f=>`<label>From<input type="date" value="${FL.from}" onchange="setF('from',this.value)"></label>`,to:f=>`<label>To<input type="date" value="${FL.to}" onchange="setF('to',this.value)"></label>`,
+ type:()=>`<label>Voucher Type<select onchange="setF('type',this.value)"><option value="">All</option>${Object.keys(VT).map(k=>`<option value="${k}" ${FL.type==k?'selected':''}>${VT[k][0]}</option>`).join('')}</select></label>`,
+ party:()=>`<label>Party<select onchange="setF('party',this.value)">${popt(FL.party,'All parties')}</select></label>`,party1:()=>`<label>Party<select onchange="setF('party',this.value)">${popt(FL.party,'-- Select --')}</select></label>`,
+ q:()=>`<label>Search<input placeholder="No / party / narration" value="${esc(FL.q)}" oninput="setF('q',this.value)"></label>`,
+ st:()=>`<label>Show<select onchange="setF('st',this.value)"><option value="">All balances</option><option value="Dr" ${FL.st=='Dr'?'selected':''}>Receivable (Dr)</option><option value="Cr" ${FL.st=='Cr'?'selected':''}>Payable (Cr)</option></select></label>`,
+ cat:()=>`<label>Category<select onchange="setF('cat',this.value)"><option value="">All</option>${[...new Set(S.items.map(i=>i.cat))].map(c=>`<option ${FL.cat==c?'selected':''}>${esc(c)}</option>`).join('')}</select></label>`,
+ low:()=>`<label>Stock level<select onchange="setF('low',this.value)"><option value="">All</option><option value="1" ${FL.low?'selected':''}>Low stock only</option></select></label>`};
+function setF(k,v){FL[k]=v;const o=$('#out');if(o)o.innerHTML=R[view].run(FL)}
+function repView(){const r=R[view];return`<h2>${r.t}</h2><div class="card fb">${r.f.map(k=>FD[k]()).join('')}<button onclick="print()">🖨 Print</button></div><div class="card"><div class="ph"><h3>${esc(B().name)}</h3><div>${esc(B().addr)} ${esc(B().phone)}</div>${r.t}</div><div id="out">${r.run(FL)}</div></div>`}
+// ---------- masters ----------
+function partyView(){const e=EDIT&&P(EDIT)||{};return`<h2>Parties – Customer & Supplier Ledgers</h2><div class="card"><div class="fm">
+<label>Party Name<input id="pn" value="${esc(e.name)}"></label><label>Type<select id="pt"><option ${e.type=='Customer'?'selected':''}>Customer</option><option ${e.type=='Supplier'?'selected':''}>Supplier</option></select></label>
+<label>Phone<input id="pp" value="${esc(e.phone)}"></label><label>City / Address<input id="pc" value="${esc(e.city)}"></label><label>GSTIN<input id="pg" value="${esc(e.gstin)}"></label>
+<label>Opening Balance<input id="po" type="number" value="${e.opening||0}"></label><label>Dr / Cr<select id="pd"><option ${e.drcr!='Cr'?'selected':''}>Dr</option><option ${e.drcr=='Cr'?'selected':''}>Cr</option></select></label></div>
+<button onclick="saveParty()">${EDIT?'Update':'Add'} Party</button> ${EDIT?'<button class="g" onclick="EDIT=null;draw()">Cancel</button>':''}</div>
+<div class="card">${tbl(['Name','Type','Phone','City','>Balance',''],S.parties.map(p=>[esc(p.name),p.type,esc(p.phone),esc(p.city),bs(ledger(p.id,'0000','9999').close),`<button class="g" onclick="EDIT='${p.id}';draw()">Edit</button> <button class="g" onclick="FL.party='${p.id}';go('r_led');setTimeout(print,150)">🖨 Ledger</button> <button class="d" onclick="delP('${p.id}')">✕</button>`]))}</div>`}
+function saveParty(){const n=$('#pn').value.trim();if(!n)return toast('Enter party name');const o={name:n,type:$('#pt').value,phone:$('#pp').value,city:$('#pc').value,gstin:$('#pg').value,opening:+$('#po').value||0,drcr:$('#pd').value};
+ if(EDIT)Object.assign(P(EDIT),o);else S.parties.push({id:uid(),...o});EDIT=null;save();toast('Party saved');draw()}
+function delP(id){if(S.vch.some(v=>v.party==id))return toast('Party has transactions – cannot delete');if(confirm('Delete party?')){S.parties=S.parties.filter(p=>p.id!=id);save();draw()}}
+function itemView(){const e=EDIT&&I(EDIT)||{};return`<h2>Items / Stock Master</h2><div class="card"><div class="fm">
+<label>Item Name<input id="in" value="${esc(e.name)}"></label><label>Category<input id="ic" list="cats" value="${esc(e.cat)}"><datalist id="cats">${[...new Set(S.items.map(i=>i.cat))].map(c=>`<option>${esc(c)}</option>`).join('')}</datalist></label>
+<label>Size / Range<input id="is" value="${esc(e.size)}"></label><label>Cost Price<input id="ico" type="number" value="${e.cost||0}"></label><label>Sale Price<input id="ip" type="number" value="${e.price||0}"></label>
+<label>Opening Stock (pcs)<input id="io" type="number" value="${e.opening||0}"></label><label>Low-stock Level<input id="im" type="number" value="${e.min??5}"></label></div>
+<button onclick="saveItem()">${EDIT?'Update':'Add'} Item</button> ${EDIT?'<button class="g" onclick="EDIT=null;draw()">Cancel</button>':''}</div>
+<div class="card">${tbl(['Item','Category','Size','>Cost','>Price','>Stock',''],S.items.map(i=>[esc(i.name),esc(i.cat),esc(i.size),fmt(i.cost),fmt(i.price),stock(i.id).q,`<button class="g" onclick="itemCard('${i.id}')">🖨</button> <button class="g" onclick="EDIT='${i.id}';draw()">✎ Edit</button> <button class="d" onclick="delI('${i.id}')">✕</button>`]))}</div>`}
+function saveItem(){const n=$('#in').value.trim();if(!n)return toast('Enter item name');const o={name:n,cat:$('#ic').value||'General',size:$('#is').value,cost:+$('#ico').value||0,price:+$('#ip').value||0,opening:+$('#io').value||0,min:+$('#im').value||0};
+ if(EDIT)Object.assign(I(EDIT),o);else S.items.push({id:uid(),...o});EDIT=null;save();toast('Item saved');draw()}
+function delI(id){if(S.vch.some(v=>(v.lines||[]).some(l=>l.item==id)))return toast('Item used in vouchers – cannot delete');if(confirm('Delete item?')){S.items=S.items.filter(i=>i.id!=id);save();draw()}}
+// ---------- vouchers ----------
+const isInv=t=>VT[t][2]!=0;
+function newView(){const t=VTYPE,o=EV&&S.vch.find(x=>x.id==EV)||{},cust=['SAL','SRT','RCT'].includes(t);return`<h2>${o.id?'Edit Voucher '+o.no:'Voucher Entry'}</h2><div class="card"><div class="fm">
+<label>Voucher Type<select id="vt" ${o.id?'disabled':''} onchange="VTYPE=this.value;L=[];draw()">${Object.keys(VT).map(k=>`<option value="${k}" ${k==t?'selected':''}>${VT[k][0]}</option>`).join('')}</select></label>
+<label>Date<input type="date" id="vd" value="${o.date||today()}"></label><label>${cust?'Customer':'Supplier'}<select id="vp">${popt(o.party||'',isInv(t)?'Cash (no party)':'-- Select --',p=>p.type==(cust?'Customer':'Supplier'))}</select></label>
+<label>Voucher No<input value="${o.no||VT[t][3]+'-'+((S.seq[t]||0)+1)}" disabled></label></div>
+${isInv(t)?`<div class="tw"><table><thead><tr><th>Item</th><th class="r">Qty</th><th class="r">Rate</th><th class="r">Amount</th><th></th></tr></thead><tbody id="ln"></tbody></table></div><button class="g" onclick="addL()">+ Add Item</button>
+<div class="fm" style="margin-top:12px"><label>Discount (₹)<input id="ds" type="number" value="${o.disc||0}" oninput="calc()"></label><label>Net Total<input id="nt" disabled></label>${o.id?'':`<label>${t=='SAL'||t=='PRT'?'Received':'Paid'} now (₹)<input id="pa" type="number" value="0"></label>`}</div>`
+:`<div class="fm"><label>Amount (₹)<input id="am" type="number" value="${o.amount||''}"></label><label>Mode<select id="md">${['Cash','Bank','UPI','Cheque'].map(m=>`<option ${o.mode==m?'selected':''}>${m}</option>`).join('')}</select></label></div>`}
+<label class="fm" style="display:block"><span class="mu" style="font-size:11px">Narration</span><input id="nr" value="${esc(o.narr)}" style="width:100%"></label><button onclick="saveV()">${o.id?'Update':'Save'} Voucher</button>${o.id?` <button class="g" onclick="L=[];go('new')">Cancel</button>`:''}</div>
+<div class="card"><b>Recent vouchers</b>${tbl(['Date','No','Type','Party','>Amount',''],sorted().slice(-8).reverse().map(v=>[v.date,v.no,VT[v.type][0],esc(pn(v.party)),fmt(v.amount),act(v)]))}</div>`}
+function addL(){L.push({item:'',q:1,rate:0});lines()}
+function lines(){const b=$('#ln');if(!b)return;b.innerHTML=L.map((l,i)=>`<tr><td><select onchange="pick(${i},this.value)"><option value="">-- item --</option>${S.items.map(x=>`<option value="${x.id}" ${x.id==l.item?'selected':''}>${esc(x.name)} ${esc(x.size)} (stk ${stock(x.id).q})</option>`).join('')}</select></td><td><input type="number" style="width:70px" value="${l.q}" oninput="L[${i}].q=+this.value;calc()"></td><td><input type="number" style="width:90px" value="${l.rate}" oninput="L[${i}].rate=+this.value;calc()"></td><td class="r">${fmt(l.q*l.rate)}</td><td><button class="d" onclick="L.splice(${i},1);lines();calc()">✕</button></td></tr>`).join('');calc()}
+function pick(i,id){const it=I(id);L[i].item=id;if(it)L[i].rate=['SAL','SRT'].includes(VTYPE)?it.price:it.cost;lines()}
+const gross=()=>L.reduce((a,l)=>a+l.q*l.rate,0);
+function calc(){const n=$('#nt');if(n)n.value=fmt(gross()-(+$('#ds').value||0))}
+function saveV(){const t=VTYPE,o=EV&&S.vch.find(x=>x.id==EV),v={id:o?o.id:uid(),ts:o?o.ts:Date.now(),type:t,date:$('#vd').value,party:$('#vp').value,narr:$('#nr').value};
+ if(!v.date)return toast('Select date');
+ if(isInv(t)){v.lines=L.filter(l=>l.item&&l.q>0).map(l=>({item:l.item,q:l.q,rate:l.rate}));if(!v.lines.length)return toast('Add at least one item');v.disc=+$('#ds').value||0;v.amount=v.lines.reduce((a,l)=>a+l.q*l.rate,0)-v.disc}
+ else{v.amount=+$('#am').value;v.mode=$('#md').value;if(!v.party)return toast('Select a party')}
+ if(!(v.amount>0))return toast('Amount must be greater than 0');
+ const no=x=>{S.seq[x]=(S.seq[x]||0)+1;return VT[x][3]+'-'+S.seq[x]};
+ if(o){v.no=o.no;S.vch[S.vch.indexOf(o)]=v}else{v.no=no(t);S.vch.push(v);const pa=isInv(t)&&v.party?+$('#pa').value||0:0;if(pa>0){const rt=VT[t][1]>0?'RCT':'PAY';S.vch.push({id:uid(),ts:Date.now()+1,type:rt,date:v.date,party:v.party,amount:pa,mode:'Cash',narr:'Against '+v.no,no:no(rt)})}}
+ EV=null;L=[];save();toast(v.no+(o?' updated':' saved'));draw();viewV(v.id)}
+function delV(id){if(confirm('Delete this voucher?')){S.vch=S.vch.filter(v=>v.id!=id);save();draw()}}
+// ---------- dashboard / settings ----------
+function dash(){const m=today().slice(0,7),sm=t=>S.vch.filter(v=>v.type==t&&v.date.startsWith(m)).reduce((a,v)=>a+v.amount,0),sd=S.vch.filter(v=>v.type=='SAL'&&v.date==today()).reduce((a,v)=>a+v.amount,0);
+ let rec=0,pay=0;S.parties.forEach(p=>{const b=ledger(p.id,'0000','9999').close;b>0?rec+=b:pay-=b});const sv=S.items.reduce((a,i)=>a+stock(i.id).q*i.cost,0),low=S.items.filter(i=>stock(i.id).q<=i.min).length;
+ const k=(a,b,c='')=>`<div><small>${a}</small><b class="${c}">${b}</b></div>`;
+ return`<div class="hero"><h2>Welcome, ${esc(B().name)}</h2><span class="tag">${new Date().toDateString()}</span></div><div class="kp">${k('Today Sales','₹'+fmt(sd))}${k('This Month Sales','₹'+fmt(sm('SAL')-sm('SRT')))}${k('This Month Purchase','₹'+fmt(sm('PUR')-sm('PRT')))}${k('Receivable (Debtors)','₹'+fmt(rec),'dr')}${k('Payable (Creditors)','₹'+fmt(pay),'cr')}${k('Stock Value (cost)','₹'+fmt(sv))}${k('Low-stock Items',low,low?'cr':'')}</div>
+ <div class="card"><b>Latest transactions</b>${tbl(['Date','No','Type','Party','>Amount',''],sorted().slice(-10).reverse().map(v=>[v.date,v.no,VT[v.type][0],esc(pn(v.party)),fmt(v.amount),act(v)]))}</div>`}
+function setView(){const b=B(),f=(k,l)=>`<label>${l}<input id="b_${k}" value="${esc(b[k])}"></label>`;
+return`<h2>Settings</h2><div class="card"><h3 style="margin-top:0">🏪 Business Details</h3><div class="fm">${f('name','Business Name')}${f('tag','Tagline')}${f('addr','Address')}${f('phone','Phone')}${f('email','Email')}${f('gstin','GSTIN')}</div>
+<h3>🏦 Bank & Payment Details <small class="mu">(shown on invoices)</small></h3><div class="fm">${f('bank','Bank Name')}${f('acname','Account Holder')}${f('acno','Account Number')}${f('ifsc','IFSC Code')}${f('upi','UPI ID')}</div>
+<h3>📱 Payment QR Code</h3><div class="fm"><label>Upload QR image<input type="file" accept="image/*" onchange="upQR(this)"></label>${b.qr?`<div><img src="${b.qr}" style="width:110px;height:110px;object-fit:contain;border:1px solid var(--bd);border-radius:8px;background:#fff"><br><button class="d" onclick="collectBiz();S.biz.qr='';save();draw()">Remove QR</button></div>`:''}</div>
+<label class="fm" style="display:block"><span class="mu" style="font-size:11px">Invoice Terms &amp; Conditions</span><textarea id="b_terms" rows="3" style="width:100%">${esc(b.terms)}</textarea></label><button onclick="saveBiz()">💾 Save Business Details</button></div>
+<div class="card"><h3 style="margin-top:0">💾 Backup &amp; Restore</h3><p class="mu">Your data is stored in your Supabase cloud database. Also download a backup file regularly as an extra copy.</p><button onclick="dlBackup()">⬇ Download Backup File</button> <label style="display:inline-flex;margin-left:8px">Restore from file <input type="file" accept=".json" onchange="restoreFile(this)"></label>
+<details style="margin-top:12px"><summary>Manual copy / paste backup</summary><textarea id="bk" rows="5" style="width:100%">${esc(JSON.stringify(S))}</textarea><button onclick="restore()">Restore from text</button></details><p><button class="d" style="padding:7px 14px" onclick="if(confirm('Erase ALL data?')){S=seed();save();go('dash')}">Reset all data</button></p></div>`}
+function restore(){try{const d=JSON.parse($('#bk').value);if(!d.parties||!d.vch)throw 0;S=d;save();toast('Restored');go('dash')}catch(e){toast('Invalid backup text')}}
+// ---------- shell ----------
+const NAV=[['Main'],['dash','🏠 Dashboard'],['parties','👥 Parties / Ledgers'],['items','👕 Items & Stock'],['new','🧾 Voucher Entry'],['Reports'],['r_day','📖 Day Book'],['r_sal','💹 Sales Account'],['r_pur','🛒 Purchase Account'],['r_led','📒 Ledger Statement'],['r_out','⏳ Party Outstanding'],['r_stk','📦 Stock Report'],['r_pl','📊 Profit & Loss'],['System'],['set','⚙️ Settings & Backup'],['out','🚪 Logout']];
+function go(v){if(v=='out')return logout();view=v;EDIT=null;EV=null;document.body.classList.remove('nv');draw();scrollTo(0,0)}
+function draw(){const b=B();document.title=b.name+' – ERP';$('#nav').innerHTML=`<div class="brand"><b>${esc(b.name)}</b><span>Garments ERP · <i id="sy">${SY}</i></span></div>`+NAV.map(n=>n.length==1?`<h6>${n[0]}</h6>`:`<a class="${n[0]==view?'on':''}" onclick="go('${n[0]}')">${n[1]}</a>`).join('');$('#tt').textContent=b.name;
+ $('#main').innerHTML=R[view]?repView():({dash,parties:partyView,items:itemView,new:newView,set:setView})[view]();if(view=='new')lines()}
+document.addEventListener('click',e=>{if(e.target.closest('main'))document.body.classList.remove('nv')});
+boot();
+</script></body></html>
